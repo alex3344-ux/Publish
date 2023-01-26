@@ -1,0 +1,70 @@
+@font-face {
+	font-family: 'Font';
+	src: url(caveat.ttf);
+}
+
+body{
+  font-family: Font;
+}
+
+.display {
+	font-size: 128px;
+}
+
+.elemLst {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	text-align: center;
+}
+
+.elem {
+	width: 300px;
+}
+
+.elemImg {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 20px;
+}
+
+.elemName {
+	font-weight: 700;
+	font-size: 34px;
+	margin-bottom: 8px;
+	text-decoration: none;
+	color: #000;
+}
+
+.elemName:hover {
+	color: #FF4500;
+}
+
+.elemAuthor {
+	color: #FFD700;
+	font-weight: 700;
+	font-size: 20px;
+	background: #000;
+	animation: animate 5s infinite;
+}
+
+@keyframes animate {
+	25%{
+		color: #FFFAFA;
+	}
+	50%{
+		color: #00FFFF;
+	}
+	75%{
+		color: #FF1493;
+	}
+	100%{
+		color: #00FF00;
+	}
+}
+
+.elemPublication {
+	font-weight: 700;
+	font-size: 18px;
+}
